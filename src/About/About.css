@@ -1,0 +1,14 @@
+.sliders-container-about {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/*align-items: flex-start;*/
+	/*background-color: red;*/
+	padding-top: 100px;
+	padding-bottom: 150px;
+	/*background-color: rgb(137,160,202);*/
+	background-color: white;
+}

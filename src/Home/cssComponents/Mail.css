@@ -1,0 +1,136 @@
+.mail-section {
+	height: 400px;
+	width: 65%;
+	padding-top: 100px;
+	margin-bottom: 200px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-mail-container {
+	height: 100%;
+	width: 60%;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+}
+
+.mail-text {
+	width: 100%;
+	height: 6rem;
+	background: rgb(137,160,202);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	border-radius: 5px;	
+	/*background: linear-gradient(45deg, rgb(137,160,202) 25%, rgba(37,52,93, 0.1) 25%, rgba(37,52,93, 0.1) 50%, rgb(137,160,202) 50%, rgb(137,160,202) 75%, rgb(37,52,93) 75%, rgb(37,52,93));*/
+	background: rgb(137,160,202);
+}
+
+.mail-text p {
+	font-family: 'MontserratThin';
+	font-size: 1.5rem;
+	margin: 25px 15px 10px;
+}
+
+.mail-send {
+	width: 100%;
+	height: 4.5rem;
+	background: white;
+	border: 4px solid rgb(137,160,202);
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 1.5rem;
+	cursor: pointer;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.ripple {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #cc4919;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rippleAnim 0.7s forwards;
+}
+
+@keyframes rippleAnim {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 300%;
+    height: 300%;
+  }
+}
+
+.mail-send h2 {
+	letter-spacing: 3px;
+	word-spacing: 15px;
+	font-family: 'MontserratBold';
+	
+	position: relative;
+}
+
+.mail-send:hover {
+	animation: mint-button-animation 200ms linear 0s infinite alternate;
+}
+
+@keyframes mint-button-animation {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+
+.mail-section img {
+	border-radius: 15px;
+	filter: invert(1);
+}
+
+@media (max-width: 1600px) {
+
+	.mail-section {
+		width: 85%;
+	}
+}
+
+@media (max-width: 1000px) {
+
+  .mail-section {
+		flex-direction: column;
+  }
+
+	.text-mail-container {
+		width: 100%;
+		order: 2;
+	}
+
+	.mail-section img {
+		margin-bottom: 50px;
+		order: 1;
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	.mail-text p {
+		font-size: 1.1rem;
+	}
+}
+
+

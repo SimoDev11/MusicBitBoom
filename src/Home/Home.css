@@ -1,0 +1,54 @@
+.wavey__line {
+    position: relative;
+    transform: translateX(0);
+    height: 70px;
+    width: 2000px;
+    background: rgb(37,52,93);
+		/*background: red;*/
+    display: block;
+}
+
+.wavey__line.line2 {
+	background: rgb(137,160,202);
+}
+
+.wavey__line:before {
+    border-radius: 100% 50%;
+    width: 57.2%;
+    height: 80px;
+    background-color: rgb(137,160,202);
+		/*background: white;*/
+    right: -5px;
+    top: 40px;
+}
+
+.wavey__line.line2:before {
+	background: rgb(37,52,93);
+}
+
+.wavey__line:before, .wavey__line:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+
+.wavey__line:after {
+    border-radius: 100% 50%;
+    width: 50%;
+    height: 70px;
+    background-color: rgb(37,52,93);
+		/*background: green;*/
+    left: 0;
+    top: 27px;
+}
+
+.wavey__line.line2:after {
+	background: rgb(137,160,202);
+}
+
+.wavey__line:before, .wavey__line:after {
+    content: "";
+    display: block;
+    position: absolute;
+}

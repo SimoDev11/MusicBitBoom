@@ -1,0 +1,94 @@
+
+@font-face {
+	font-family: MontserratThin;
+	src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(Montserrat-Bold.ttf);
+}
+
+
+@font-face {
+  font-family: Roc;
+  /*src: url(FontsFree-Net-RocGrotesk.ttf);*/
+  src: url(FontsFree-Net-RocGrotesk.ttf);
+}
+
+/*colors: 
+rgb(234,222,226) white
+rgb(188,78,88) red
+rgb(235,131,92) orange
+rgb(137,160,202) azzurro
+rgb(37,52,93) blue
+*/
+
+:root {
+	font-family: 'Poppins', sans-serif;
+	/*font-family: Roc;*/
+  font-size: 16px;
+
+	--body-background-color: rgb(37,52,93);
+	/*--body-background-color: white;*/
+	--header-background-color: rgb(37,52,93);
+	--text-color: white;
+  /*--text-color-hover: #FFE6E6;*/
+	--text-color-hover: white;
+	--social-color: white;
+}
+
+h1 {
+	font-family: MontSerratBold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+   -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+   width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+   height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #ccc;
+   border-radius: 10px;
+   border: 2px solid #eee;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #eee;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-section, .minted-section, .token-section, .attributes-section, .faq-section, .music-creator-section, .for-fan-section, .about-section {
+	width: 100%; 
+  min-height: 100vh;
+  margin: 110px 0 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
